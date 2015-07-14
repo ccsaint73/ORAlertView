@@ -7,8 +7,9 @@
 //
 
 #import "ORViewController.h"
+#import "ORAlertView.h"
 
-@interface ORViewController ()
+@interface ORViewController () <ORAlertViewDelegate>
 
 @end
 
@@ -18,12 +19,36 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+  
 }
 
-- (void)didReceiveMemoryWarning
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [ORAlertView showViewTitle:@"测试"
+                       message:@"测试数据"
+                       warning:ORAlertViewTypeWarningRed
+                      delegate:self
+                          type:ORAlertViewTypeActionSheet
+                  buttonTitles:@[@"确定", @"取消", @"其他"]];
+}
+
+// 点击确定按钮
+- (void)alertViewDidConfirmButtonSelected:(id)sender
+{
+    
+}
+
+// 点击取消按钮
+- (void)alertViewDidCancelButtonSelected:(id)sender
+{
+
+}
+
+// 点击其他按钮
+- (void)alertViewDidOtherButtonSelected:(id)sender
+{
+
 }
 
 @end

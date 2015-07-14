@@ -21,6 +21,7 @@
 		BC1B63AD1B54A3B1001184F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC1B638F1B54A3B0001184F7 /* UIKit.framework */; };
 		BC1B63B51B54A3B1001184F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC1B63B31B54A3B1001184F7 /* InfoPlist.strings */; };
 		BC1B63B71B54A3B1001184F7 /* ORAlertViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1B63B61B54A3B1001184F7 /* ORAlertViewTests.m */; };
+		BC1B63C31B54A3EA001184F7 /* ORAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1B63C21B54A3EA001184F7 /* ORAlertView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		BC1B63B21B54A3B1001184F7 /* ORAlertViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ORAlertViewTests-Info.plist"; sourceTree = "<group>"; };
 		BC1B63B41B54A3B1001184F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BC1B63B61B54A3B1001184F7 /* ORAlertViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ORAlertViewTests.m; sourceTree = "<group>"; };
+		BC1B63C11B54A3EA001184F7 /* ORAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORAlertView.h; sourceTree = "<group>"; };
+		BC1B63C21B54A3EA001184F7 /* ORAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORAlertView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,12 +115,9 @@
 		BC1B63911B54A3B0001184F7 /* ORAlertView */ = {
 			isa = PBXGroup;
 			children = (
-				BC1B639A1B54A3B0001184F7 /* ORAppDelegate.h */,
-				BC1B639B1B54A3B0001184F7 /* ORAppDelegate.m */,
-				BC1B639D1B54A3B0001184F7 /* Main.storyboard */,
 				BC1B63A01B54A3B0001184F7 /* ORViewController.h */,
 				BC1B63A11B54A3B0001184F7 /* ORViewController.m */,
-				BC1B63A31B54A3B0001184F7 /* Images.xcassets */,
+				BC1B63C01B54A3D7001184F7 /* ORAlertView */,
 				BC1B63921B54A3B0001184F7 /* Supporting Files */,
 			);
 			path = ORAlertView;
@@ -126,6 +126,10 @@
 		BC1B63921B54A3B0001184F7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BC1B63A31B54A3B0001184F7 /* Images.xcassets */,
+				BC1B639A1B54A3B0001184F7 /* ORAppDelegate.h */,
+				BC1B639B1B54A3B0001184F7 /* ORAppDelegate.m */,
+				BC1B639D1B54A3B0001184F7 /* Main.storyboard */,
 				BC1B63931B54A3B0001184F7 /* ORAlertView-Info.plist */,
 				BC1B63941B54A3B0001184F7 /* InfoPlist.strings */,
 				BC1B63971B54A3B0001184F7 /* main.m */,
@@ -150,6 +154,15 @@
 				BC1B63B31B54A3B1001184F7 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC1B63C01B54A3D7001184F7 /* ORAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				BC1B63C11B54A3EA001184F7 /* ORAlertView.h */,
+				BC1B63C21B54A3EA001184F7 /* ORAlertView.m */,
+			);
+			path = ORAlertView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC1B63C31B54A3EA001184F7 /* ORAlertView.m in Sources */,
 				BC1B63981B54A3B0001184F7 /* main.m in Sources */,
 				BC1B639C1B54A3B0001184F7 /* ORAppDelegate.m in Sources */,
 				BC1B63A21B54A3B0001184F7 /* ORViewController.m in Sources */,
